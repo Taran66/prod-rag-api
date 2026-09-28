@@ -8,9 +8,9 @@ from functools import lru_cache
 class Settings(BaseSettings):
 
     #LLM Configuration
-    mistral_api_key: str
-    primary_model: str = "mistral-small-2603"
-    fallback_model: str = "mistral-small-2603"
+    groq_api_key: str
+    primary_model: str = "qwen/qwen3.8-27b"
+    fallback_model: str = "qwen/qwen3.8-27b"
 
     # LangSmith
     langchain_tracing_v2: bool = True
