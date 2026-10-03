@@ -4,12 +4,16 @@ Retry logic, model fallback, and structured state management.
 """
 
 from typing import Optional
-from typing_extensions import TypedDict, Annotated
+from typing_extensions import TypedDict, Annotated 
+# TypedDict provide the type hints to dictionary using the class based syntax
+# Annotated lets you attach metadata to an existing type without changing the underlying type itself.
+
+# In Python, TypedDict and Annotated are used for type hints. They help you describe the structure of data and attach additional information to types.
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph.message import add_messages
 # from langchain_openai import ChatOpenAI
 # from langchain_mistralai.chat_models import ChatMistralAI
-from langchain_groq import ChatGroq
+from langchain_groq import ChatGroq 
 from langchain_core.messages import HumanMessage, AIMessage, BaseMessage
 from langsmith import traceable
 from langchain_groq import ChatGroq

@@ -10,7 +10,6 @@ from datetime import datetime, timezone
 from functools import wraps
 from typing import Any, Callable
 
-
 # === Structured JSON Logger ===
 
 class JSONFormatter(logging.Formatter):
@@ -124,4 +123,3 @@ class RequestTimer:
 
     def __exit__(self, *args):
         self.elapsed_ms = (time.time() - self.start) * 1000
-        
