@@ -3,7 +3,8 @@ Centralized Configuration Uses pydantic-settings for validated enviroment variab
 """
 
 from pydantic_settings import BaseSettings
-from functools import lru_cache
+from functools import lru_cache  
+# Least Recently Used cache
 
 class Settings(BaseSettings):
 

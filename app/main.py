@@ -35,15 +35,12 @@ from app.agent import ProductionAgent
 
 load_dotenv()
 
-
-
 # === Global instances (initialized in lifespan) ===
 security: SecurityPipeline = None
 cache: ResponseCache = None
 metrics: MetricsCollector = None
 agent: ProductionAgent = None
 logger = get_logger()
-
 
 # === Lifespan (startup/shutdown) ===
 
