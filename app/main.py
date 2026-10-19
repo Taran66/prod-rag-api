@@ -211,9 +211,7 @@ async def chat(request: Request, body: ChatRequest):
         processing_time_ms=round(timer.elapsed_ms, 2),
         security_notes=security_notes,
     )
-    
-    
-    
+
     
 @app.get("/health", response_model=HealthResponse)
 async def health():
