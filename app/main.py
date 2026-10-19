@@ -89,7 +89,7 @@ app.state.limiter = limiter
 
 # === Exception Handlers ===
 
-@app.exception_handler(RateLimitExceeded)
+@app.exception_handler(RateLimitExceeded) # Path operation decorator
 async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
     """Handle rate limit exceeded errors."""
     logger.warning("Rate limit exceeded", extra={"extra_data": {
