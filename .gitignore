@@ -9,3 +9,12 @@ wheels/
 # Virtual environments
 .venv
 .env
+
+#IDE
+.vscode/
+.idea/
+
+#OS
+
+.DS_Store
+Thumbs.db
